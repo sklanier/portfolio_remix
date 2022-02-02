@@ -1,7 +1,7 @@
 module.exports = {
   mode: "jit",
   content: ["./app/**/*.{js,jsx}"],
-  darkMode: false, // or 'media' or 'class'
+  media: false, // or 'media' or 'class'
   theme: {
     extend: {
       backgroundImage: {

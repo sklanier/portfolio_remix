@@ -7,6 +7,13 @@ import {
   ScrollRestoration
 } from "remix";
 
+import { LinksFunction } from "remix";
+import tailwindUrl from "./styles/tailwind.css";
+
+export let links: LinksFunction = () => {
+  return [{ rel: "stylesheet", href: tailwindUrl }];
+};
+
 export function meta() {
   return { title: "New Remix App" };
 }
